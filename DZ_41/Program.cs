@@ -9,14 +9,14 @@ Console.WriteLine("Введите число M(Количесво чисел): "
 int m = Convert.ToInt32(Console.ReadLine());
 int[] arrNumbers = new int[m];
 
-FillarrNumbers(m);
+FillArrNumbers(m);
 Console.WriteLine();
 Console.Write(String.Join(",", arrNumbers));
 Console.WriteLine(" -> "+ PrintArrNumbers(arrNumbers));
 Console.WriteLine($"Введино чисел больше 0: {PrintArrNumbers(arrNumbers)} ");
 Console.WriteLine();
 
-void FillarrNumbers(int m)
+void FillArrNumbers(int m)
 {
     for (int i = 0; i < m; i++)
     {
